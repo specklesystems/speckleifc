@@ -11,7 +11,7 @@ def extract_properties(element: entity_instance) -> dict[str, object]:
     }
 
     if (ifc_type := get_type(element)) is not None:
-        properties["Element Type Properties"] = _get_ifc_element_type_properties(
+        properties["Element Type Property Sets"] = _get_ifc_element_type_properties(
             ifc_type,
         )
 
